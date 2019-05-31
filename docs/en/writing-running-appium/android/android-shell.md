@@ -35,3 +35,10 @@ result = driver.execute_script('mobile: shell', {
 })
 assert result['stdout'] == 'arg1 arg2'
 ```
+
+```ruby
+# Ruby
+args = {arg1: 'param1_value', param2: 'param2_value'}
+output = driver.execute_script("mobile: shell", args)
+p output
+```
